@@ -1,6 +1,11 @@
 ## snippets
 recall the command you ran (thanks hannah):
 ```bash
+history grep | "heroku"
+```
+
+npm within a docker container:
+```bash
 docker-compose run --rm app npm install react-csv --save
 ```
 

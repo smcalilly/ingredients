@@ -1,7 +1,7 @@
 ## snippets
 recall the command you ran (thanks hannah):
 ```bash
-history grep | "heroku"
+history | grep "heroku"
 ```
 
 npm within a docker container:

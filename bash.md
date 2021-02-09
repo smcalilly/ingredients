@@ -11,6 +11,7 @@ list all the containers (not only the running ones):
 docker ps -a 
 ```
 
+debug your image:
 ```bash
 docker logs <my-container-image>
 ```

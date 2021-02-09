@@ -1,8 +1,4 @@
 ## snippets
-recall the command you ran (thanks hannah):
-```bash
-history | grep "heroku"
-```
 
 ### docker
 npm within a docker container:
@@ -16,6 +12,11 @@ docker ps -a
 ```
 
 [for more explanations of some basic/often-used flags](https://stackoverflow.com/questions/59424979/docker-ps-is-empty-after-docker-run#answer-59424994)
+
+recall the command you ran (thanks hannah):
+```bash
+history | grep "heroku"
+```
 
 ## aliases for bash/zsh profile
 ```bash

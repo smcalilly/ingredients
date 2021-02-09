@@ -6,7 +6,7 @@ npm within a docker container:
 docker-compose run --rm app npm install
 ```
 
-list all the containers:
+list all the containers (not only the running ones):
 ```bash
 docker ps -a 
 ```

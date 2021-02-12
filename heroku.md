@@ -1,10 +1,11 @@
-## Django
-Commands for working with a docker'd django app.
-
+## Heroku CLI
 See the live logs:
 ```bash
 heroku logs -a <app-name> -t
 ```
+
+## Django
+Commands for working with a docker'd django app.
 
 Access the Django shell:
 ```bash

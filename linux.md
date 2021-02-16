@@ -54,12 +54,12 @@ scp linux.md user@host:~/recipes
 ```
 
 ## backups
-see block devices
+see block devices:
 ```bash
 lsblk -p
 ```
 
-
+backup:
 ```bash
 dd if=/dev/mmcblk0 dd of=~/backups/backup.img bs=1M
 ```
@@ -74,5 +74,5 @@ watch -n 10 ls -alh
 edit crontab
 ```bash
 sudo crontab -e
-
+```
 

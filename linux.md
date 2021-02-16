@@ -1,3 +1,9 @@
+## etc
+restart a service
+```bash
+sudo systemctl reload sshd.service
+```
+
 ## ntp
 restart ntp:
 ```bash

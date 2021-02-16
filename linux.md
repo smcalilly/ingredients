@@ -49,12 +49,20 @@ see block devices
 lsblk -p
 ```
 
-create backup image of a block device, [remotely](https://www.it-react.com/index.php/2020/02/02/backup-your-raspberry-pi-remotely/)
+
 ```bash
-ssh user@hostname "sudo dd if=/dev/mmcblk0 bs=1M | gzip -" | dd of=~/backups/backup.gz
+sudo dd if=/dev/mmcblk0 bs=1M" | dd of=~/backups/backup.img
 ```
+you can try to create backup image of a block device, [remotely](https://www.it-react.com/index.php/2020/02/02/backup-your-raspberry-pi-remotely/)
 
 watch the process:
 ```bash
 watch -n 10 ls -alh
 ```
+
+## crontab
+edit crontab
+```bash
+sudo crontab -e
+
+

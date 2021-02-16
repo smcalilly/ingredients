@@ -6,6 +6,11 @@ restart a service
 sudo systemctl reload sshd.service
 ```
 
+list human-readable file size
+```bash
+ls -la
+```
+
 ## ntp
 restart ntp:
 ```bash

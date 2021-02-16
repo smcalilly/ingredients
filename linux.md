@@ -11,6 +11,11 @@ list human-readable file size
 ls -la
 ```
 
+change permissions for a script
+```bash
+sudo chmod +x script.sh
+```
+
 ## ntp
 restart ntp:
 ```bash
@@ -56,7 +61,7 @@ lsblk -p
 
 
 ```bash
-sudo dd if=/dev/mmcblk0 bs=1M" | dd of=~/backups/backup.img
+dd if=/dev/mmcblk0 dd of=~/backups/backup.img bs=1M
 ```
 you can try to create backup image of a block device, [remotely](https://www.it-react.com/index.php/2020/02/02/backup-your-raspberry-pi-remotely/)
 

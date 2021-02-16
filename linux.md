@@ -40,6 +40,11 @@ how to setup ssh keys
 ```bash
 curl https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-2
 ```
+generate new key:
+```bash
+ssh-keygen -t rsa
+```
+
 print public key
 ```bash
 cat ~/.ssh/id_rsa.pub

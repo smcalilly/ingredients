@@ -38,6 +38,10 @@ remove keys
 ```bash
 rm -rf /home/sam/.ssh 
 ```
+secure copy
+```bash
+scp linux.md user@host:~/files
+```
 
 ## backups
 see block devices

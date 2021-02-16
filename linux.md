@@ -16,3 +16,9 @@ what is that open port? ssh into the host once it's up
 ```bash
 netstat -tulpn | grep <port>
 ```
+
+## ssh
+how to setup ssh keys
+```bash
+curl https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-2
+```

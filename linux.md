@@ -1,3 +1,5 @@
+
+
 ## etc
 restart a service
 ```bash
@@ -31,4 +33,24 @@ curl https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-2
 print public key
 ```bash
 cat ~/.ssh/id_ed25519.pub
+```
+remove keys
+```bash
+rm -rf /home/sam/.ssh 
+```
+
+## backups
+see block devices
+```bash
+lsblk -p
+```
+
+create backup image of a block device, [remotely](https://www.it-react.com/index.php/2020/02/02/backup-your-raspberry-pi-remotely/)
+```bash
+ssh user@hostname "sudo dd if=/dev/mmcblk0 bs=1M | gzip -" | dd of=~/backups/backup.gz
+```
+
+watch the process:
+```bash
+watch -n 10 ls -alh
 ```

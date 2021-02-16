@@ -45,3 +45,8 @@ source ~/.bashrc
 source ~/.zshrc
 ```
 
+usage
+```bash
+dpm shell # same as docker-compose run --rm app python manage.py shell
+dup --build # same as docker-compose up --build
+```

@@ -30,5 +30,5 @@ curl https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-2
 ```
 print public key
 ```bash
-cat ~/.ssh/key.pub
+cat ~/.ssh/id_ed25519.pub
 ```

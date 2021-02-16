@@ -28,9 +28,20 @@ history | grep "heroku"
 
 ## aliases for bash/zsh profile
 ```bash
+# aliases
+alias dpm="docker-compose run --rm app python manage.py $1"
 alias dup="docker-compose up $1"
 alias down="docker-compose down $1"
-alias dpm="docker-compose run --rm app python manage.py $1"
-alias dtest="docker-compose -f docker-compose.yml -f tests/docker-compose.yml run --rm app"
+alias dtest="docker-compose -f docker-compose.yml -f tests/docker-compose.yml r$
+alias dbuild="docker-compose build"
+```
+
+refresh after changes
+```bash
+source ~/.bashrc
+```
+
+```zsh
+source ~/.zshrc
 ```
 

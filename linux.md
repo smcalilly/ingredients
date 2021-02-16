@@ -32,15 +32,15 @@ curl https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-2
 ```
 print public key
 ```bash
-cat ~/.ssh/id_ed25519.pub
+cat ~/.ssh/id_rsa.pub
 ```
 remove keys
 ```bash
-rm -rf /home/sam/.ssh 
+rm -rf ~/.ssh 
 ```
 secure copy
 ```bash
-scp linux.md user@host:~/files
+scp linux.md user@host:~/recipes
 ```
 
 ## backups

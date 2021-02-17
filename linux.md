@@ -16,6 +16,9 @@ change permissions for a script
 sudo chmod +x script.sh
 ```
 
+- [more granuluar permissions for a script0
+
+
 ## ntp
 restart ntp:
 ```bash

@@ -8,7 +8,7 @@ sudo systemctl reload sshd.service
 
 list human-readable file size
 ```bash
-ls -la
+ls -lh
 ```
 
 change permissions for a script

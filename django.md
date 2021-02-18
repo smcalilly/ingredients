@@ -8,3 +8,15 @@ from django.db import connection
 tables = connection.introspection.table_names()
 seen_models = connection.introspection.installed_models(tables)
 ```
+
+message in a template (works with bootstrap):
+```
+{% if messages %}
+  {% for message in messages %}
+    <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      {{ message }}
+    </div>
+  {% endfor %}
+{% endif %}
+```

@@ -43,6 +43,7 @@ how to setup ssh keys
 ```bash
 curl https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-2
 ```
+
 generate new key:
 ```bash
 ssh-keygen -t rsa
@@ -59,6 +60,11 @@ rm -rf ~/.ssh
 secure copy
 ```bash
 scp linux.md user@host:~/recipes
+```
+
+see ssh logs
+```bash
+tail -n 500 /var/log/auth.log | grep 'sshd'
 ```
 
 ## backups
@@ -84,3 +90,5 @@ edit crontab
 sudo crontab -e
 ```
 
+## users
+- /etc/group

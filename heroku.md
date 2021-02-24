@@ -4,6 +4,16 @@ See the live logs:
 heroku logs -a <app-name> -t
 ```
 
+create a postgres add-on:
+```bash
+heroku addons:create heroku-postgresql:hobby-dev
+```
+
+set the stack as a container for your app:
+```bash
+heroku stack:set container
+```
+
 ## Django
 Commands for working with a docker'd django app.
 

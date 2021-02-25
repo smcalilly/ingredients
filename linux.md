@@ -16,7 +16,12 @@ change permissions for a script
 sudo chmod +x script.sh
 ```
 
-- [more granuluar permissions for a script0
+- [more granuluar permissions for a script0 (whoops, where did the link go?)
+
+search for a word in all the files within a directory:
+```bash
+grep lambda *
+```
 
 
 ## ntp

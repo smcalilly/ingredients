@@ -17,7 +17,7 @@ sudo cat /var/log/btmp
 sudo cat /var/log/wtmp
 ```
 
-find the line number in a file
+find a word in a file, with a line number
 ```bash
 grep -rnw '/path/to/somewhere/' -e 'pattern'
 ```

@@ -1,6 +1,23 @@
 
 
 ## etc
+see logs
+```bash
+cat /var/log/syslog
+sudo cat /var/log/auth.log
+cat /var/log/mail.log
+
+# disk stuff
+cat /var/log/dmesg
+
+# failed login attempts
+sudo cat /var/log/btmp
+
+# login/logout history
+sudo cat /var/log/wtmp
+```
+
+
 restart a service
 ```bash
 sudo systemctl reload sshd.service

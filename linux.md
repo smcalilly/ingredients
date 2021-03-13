@@ -40,6 +40,36 @@ search for a word in all the files within a directory:
 grep lambda *
 ```
 
+
+## ssh
+how to setup ssh keys
+```bash
+curl https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-2
+```
+
+generate new key:
+```bash
+ssh-keygen -t rsa
+```
+
+print public key
+```bash
+cat ~/.ssh/id_rsa.pub
+```
+remove keys
+```bash
+rm -rf ~/.ssh 
+```
+secure copy
+```bash
+scp linux.md user@host:~/recipes
+```
+
+see ssh logs
+```bash
+tail -n 500 /var/log/auth.log | grep 'sshd'
+```
+
 ## ufw
 ```bash
 sudo ufw status verbose
@@ -87,35 +117,6 @@ nmap <hostname> -Pn
 what is that open port? ssh into the host once it's up
 ```bash
 netstat -tulpn | grep <port>
-```
-
-## ssh
-how to setup ssh keys
-```bash
-curl https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-2
-```
-
-generate new key:
-```bash
-ssh-keygen -t rsa
-```
-
-print public key
-```bash
-cat ~/.ssh/id_rsa.pub
-```
-remove keys
-```bash
-rm -rf ~/.ssh 
-```
-secure copy
-```bash
-scp linux.md user@host:~/recipes
-```
-
-see ssh logs
-```bash
-tail -n 500 /var/log/auth.log | grep 'sshd'
 ```
 
 ## backups

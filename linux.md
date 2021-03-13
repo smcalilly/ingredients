@@ -40,6 +40,35 @@ search for a word in all the files within a directory:
 grep lambda *
 ```
 
+## ufw
+```bash
+sudo ufw status verbose
+```
+
+## psad
+```bash
+sudo ufw reload
+
+sudo psad -R
+sudo psad --sig-update
+sudo psad -H
+
+# analyze
+sudo psad --fw-analyze
+
+# see status
+sudo psad --Status
+``
+
+## fail2ban
+```bash
+sudo fail2ban-client start
+sudo fail2ban-client reload
+sudo fail2ban-client add sshd
+
+# check the status
+sudo fail2ban-client status
+```
 
 ## ntp
 restart ntp:

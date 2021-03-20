@@ -148,3 +148,15 @@ sudo crontab -e
 
 ## users
 - /etc/group
+
+## yubikey for authentication
+[thanks](https://mutschler.eu/linux/install-guides/pop-os-post-install/#yubikey-two-factor-authentication-for-adminsudo-password) 
+```bash
+pamu2fcfg > ~/u2f_keys # When your device begins flashing, touch the metal contact to confirm the association.
+pamu2fcfg -n >> ~/u2f_keys # Do the same with your backup device
+sudo mv ~/u2f_keys /etc/u2f_keys
+# Make this required for common-auth
+echo "auth    required                        pam_u2f.so nouserok authfile=/etc/u2f_keys cue" | sudo tee -a /etc/pam.d/common-auth
+# Before you close the terminal, open a new one and check whether you can do `sudo echo test`
+```
+

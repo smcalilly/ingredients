@@ -161,3 +161,12 @@ echo "auth    required                        pam_u2f.so nouserok authfile=/etc/
 # Before you close the terminal, open a new one and check whether you can do `sudo echo test`
 ```
 
+## etc, pt2
+```bash
+htop
+```
+
+kill processes by name
+```bash
+pkill firefox
+```

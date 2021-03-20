@@ -149,9 +149,10 @@ sudo crontab -e
 ## users
 - /etc/group
 
-## yubikey for authentication
+## hardware key for 2fa
 [thanks](https://mutschler.eu/linux/install-guides/pop-os-post-install/#yubikey-two-factor-authentication-for-adminsudo-password) 
 ```bash
+sudo apt install -y libpam-u2f # second-factor for sudo commands
 pamu2fcfg > ~/u2f_keys # When your device begins flashing, touch the metal contact to confirm the association.
 pamu2fcfg -n >> ~/u2f_keys # Do the same with your backup device
 sudo mv ~/u2f_keys /etc/u2f_keys

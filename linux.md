@@ -168,3 +168,8 @@ kill processes by name
 ```bash
 pkill firefox
 ```
+
+see all the ports listening for traffic
+```bash
+sudo ss -lntup
+```

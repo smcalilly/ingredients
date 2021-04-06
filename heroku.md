@@ -29,3 +29,8 @@ heroku run python manage.py dumpdata --natural-foreign --indent 2 \
 \ -e sessions \
 \ <app-name> -- > fixtures.json
 ```
+
+create a superuser:
+```bash
+heroku run python manage.py shell -a <app-nam>
+```

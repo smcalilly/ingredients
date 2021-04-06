@@ -32,5 +32,5 @@ heroku run python manage.py dumpdata --natural-foreign --indent 2 \
 
 create a superuser:
 ```bash
-heroku run python manage.py shell -a <app-nam>
+heroku run python manage.py createsuperuser -a <app-name>
 ```

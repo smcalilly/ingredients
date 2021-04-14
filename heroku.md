@@ -16,7 +16,7 @@ heroku stack:set container
 
 ssh into an app:
 ```bash
-heroku ps:exec  -a <app-name>
+heroku run bash -a <app-name>
 ```
 
 ## Django

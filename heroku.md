@@ -14,6 +14,11 @@ set the stack as a container for your app:
 heroku stack:set container
 ```
 
+ssh into an app:
+```bash
+heroku ps:exec  -a <app-name>
+```
+
 ## Django
 Commands for working with a docker'd django app.
 

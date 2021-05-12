@@ -173,3 +173,8 @@ see all the ports listening for traffic
 ```bash
 sudo ss -lntup
 ```
+
+clear usb drive
+```bash
+sudo dd if=/dev/zero of=/dev/disk2 bs=1m count=1
+```

@@ -20,11 +20,6 @@ docker logs <my-container-image>
 
 - ["image" vs "container"](https://stackoverflow.com/questions/23735149/what-is-the-difference-between-a-docker-image-and-a-container) (hint: a container is an instance of an image. or as stackoverflow [username Julien said](https://stackoverflow.com/questions/23735149/what-is-the-difference-between-a-docker-image-and-a-container#comment-79144517), "the image is the recipe, the container is the cake ;-) you can make as many cakes as you like with a given recipe")
 
-### etc
-recall the command you ran (thanks hannah):
-```bash
-history | grep "heroku"
-```
 
 ## aliases for bash/zsh profile
 ```bash

@@ -178,3 +178,8 @@ clear usb drive
 ```bash
 sudo dd if=/dev/zero of=/dev/disk2 bs=1m count=1
 ```
+
+flash a new image
+```bash
+sudo dd if=/path/to/disk.img of=/dev/disk2 bs=1m count=1
+```

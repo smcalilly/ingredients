@@ -183,3 +183,15 @@ flash a new image
 ```bash
 sudo dd if=/path/to/disk.img of=/dev/disk2 bs=4m
 ```
+
+## sed and awk
+output line 164 in a file:
+```bash
+I have no name!@1ac3d4b9c04a:~/dist/src/processing/ImageDetectionModule$ awk 'NR==164' ImageDetectionModule.js
+                doc.pages[pageIndex].pageRotation = document.pages[pageIndex].pageRotation;
+I have no name!@1ac3d4b9c04a:~/dist/src/processing/ImageDetectionModule$ sed '164!d' ImageDetectionModule.js
+                doc.pages[pageIndex].pageRotation = document.pages[pageIndex].pageRotation;
+I have no name!@1ac3d4b9c04a:~/dist/src/processing/ImageDetectionModule$ 
+```
+- awk 'NR==164' ImageDetectionModule.js
+- sed '164!d' ImageDetectionModule.js

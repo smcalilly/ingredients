@@ -193,5 +193,5 @@ I have no name!@1ac3d4b9c04a:~/dist/src/processing/ImageDetectionModule$ sed '16
                 doc.pages[pageIndex].pageRotation = document.pages[pageIndex].pageRotation;
 I have no name!@1ac3d4b9c04a:~/dist/src/processing/ImageDetectionModule$ 
 ```
-- awk 'NR==164' ImageDetectionModule.js
-- sed '164!d' ImageDetectionModule.js
+- `awk 'NR==164' ImageDetectionModule.js`
+- `sed '164!d' ImageDetectionModule.js`

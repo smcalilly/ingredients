@@ -35,6 +35,11 @@ heroku run python manage.py dumpdata --natural-foreign --indent 2 \
 \ <app-name> -- > fixtures.json
 ```
 
+load data to a heroku db, from a local file:
+```bash
+cat staging-data.json | heroku run -no-tty -a ca-wastewater -- python manage.py loaddata --format=json -
+```
+
 create a superuser:
 ```bash
 heroku run python manage.py createsuperuser -a <app-name>

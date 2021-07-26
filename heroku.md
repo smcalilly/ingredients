@@ -37,7 +37,7 @@ heroku run python manage.py dumpdata --natural-foreign --indent 2 \
 
 [load data](https://stackoverflow.com/questions/15041853/running-loaddata-on-heroku-without-adding-the-data-file-to-repository/49152992) to a heroku db, from a local file:
 ```bash
-cat data.json | heroku run -no-tty -a <app-name> -- python manage.py loaddata --format=json -
+cat data.json | heroku run --no-tty -a <app-name> -- python manage.py loaddata --format=json -
 ```
 
 create a superuser:

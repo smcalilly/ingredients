@@ -195,3 +195,7 @@ I have no name!@1ac3d4b9c04a:~/dist/src/processing/ImageDetectionModule$
 ```
 - `awk 'NR==164' ImageDetectionModule.js`
 - `sed '164!d' ImageDetectionModule.js`
+
+
+## permissions
+- https://chmod-calculator.com/

@@ -5,6 +5,8 @@ FROM information_schema.schemata;
 ```
 
 ### psql
+- [psql tips](https://psql-tips.org/)
+
 standard `\dt` command doesn't show everything
 ```
 \dt *.*
